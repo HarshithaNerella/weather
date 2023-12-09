@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.weatherBgContainer{
+    background-image: url('./weatherImg.jpg');
+    min-height: 100vh;
+    background-size: cover;
+    width:100vw;
+    padding: 25px;
+    height: auto; 
+}
+
+.weatherBgContainer1{
+    background-image: url('./ntImg.png');
+    min-height: 100vh;
+    background-size: cover;
+    width:100vw;
+    padding: 25px;
+    height: auto; 
+}
+
+.head{
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    
+
+.inputContainer{
+    height: 120px;
+    width:380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-width: 1px;
+    border-radius: 6px;
+    border-color: blanchedalmond;
+    border-style: solid;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.inputEl{
+    background-color: rgba(0, 0, 0, 0.2);
+    border-width: 0;
+    border-radius: 6px;
+    width:250px;
+    height: 40px;
+    padding: 5px;
+    outline: none;
+    margin:20px;
+    color: whitesmoke;
+    font-size: 16px;
+}
+
+.inputEl1{
+    background-color: rgba(0, 0, 0, 0.2);
+    border-width: 0;
+    border-radius: 6px;
+    width:250px;
+    height: 40px;
+    padding: 5px;
+    outline: none;
+    margin:20px;
+    color: whitesmoke;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: whitesmoke;
+}
+
+.inputContainer input::placeholder{
+    color: lightblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+}
+
+.btnEl{
+    background-color: transparent;
+    height: 34px;
+    width: 100px;
+    border-radius: 6px;
+    border-width: 1px;
+    color: azure;
+    border-color:wheat;
+    margin-top: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 3px;
+    margin-bottom: 20px;
+    outline: none;
+}
+.resultStyle{
+    background-color: rgba(0, 0, 0, 0.3);
+    height: auto;
+    width: 380px;
+    margin:20px;
+    border-radius: 6px;
+    text-align: center;
+    border-width: 1px;
+    border-color: blanchedalmond;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.citynameStyle{
+    color: white;
+    margin:20px
+}
+.paraStyle1{
+    font-size: 30px;
+    color: whitesmoke;
+    margin: 10px;
+    align-self: center;
+}
+
+.paraStyle{
+    font-size: 20px;
+    color: whitesmoke;
+    margin: 10px;
+    align-self: flex-start;
+    margin-top: 10px;
+    margin-left: 18px;
+}
+
+.errorStyle{
+    color: white;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 380px;
+    margin: 20px;
+    border-radius: 6px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: azure;
+    text-align: center;
+    padding: 10px;
+}
+
+.spinner {
+    border: 4px solid rgba(173, 216, 230, 0.3);
+    border-radius: 50%;
+    border-top: 4px solid #1e90ff;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 30px;
+ 
+}
+
+@keyframes spin {
+    0% { transform: rotate(2deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.conditionIcon{
+    height: 60px;
+    width: 60px;
+    margin:10px
+}
